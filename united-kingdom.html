@@ -332,34 +332,61 @@
 
   <!-- MOBILE NAV DRAWER -->
   <div class="mobile-nav-drawer">
-    <div class="mobile-drawer-inner">
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:24px;">
+    <div class="mobile-drawer-body mobile-drawer-inner">
+      <div class="mobile-drawer-top">
         <div style="display:flex; align-items:center; gap:10px;">
-          <img src="assets/images/logo-icon.png?v=5" alt="Bright Links" style="height:38px; width:auto; filter:drop-shadow(0 2px 8px rgba(14,165,233,0.3));"/>
-          <span style="font-family:'Plus Jakarta Sans',sans-serif; font-size:1.4rem; font-weight:800; letter-spacing:-0.03em;">
+          <img src="assets/images/logo-icon.png?v=5" alt="Bright Links" style="height:36px; width:auto; filter:drop-shadow(0 2px 8px rgba(14,165,233,0.3));"/>
+          <span style="font-family:'Plus Jakarta Sans',sans-serif; font-size:1.3rem; font-weight:800; letter-spacing:-0.03em;">
             <span style="color:#0b132b;">Bright</span> <span style="background:linear-gradient(135deg, #0284c7, #2563eb); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">Links</span>
           </span>
         </div>
-        <button class="close-drawer-btn" style="background:none; border:none; font-size:1.6rem; cursor:pointer;">&times;</button>
+        <button class="close-drawer-btn" aria-label="Close Navigation">&times;</button>
       </div>
-      <div style="display:flex; flex-direction:column; gap:16px;">
+
+      <div class="mobile-link-list">
         <a href="index.html" class="mob-link">Home</a>
         <a href="index.html#about" class="mob-link">About Us</a>
         <a href="index.html#leadership" class="mob-link">Leadership</a>
-        <div class="mob-link" style="color:#7c3aed; font-weight:700;">Global Offices:</div>
-        <div class="mob-sub-countries">
-          <a href="dubai.html" class="mob-country-link"><span>🇦🇪</span> Dubai, UAE (Global HQ)</a>
-          <a href="usa.html" class="mob-country-link"><span>🇺🇸</span> United States (USA)</a>
-          <a href="united-kingdom.html" class="mob-country-link"><span>🇬🇧</span> United Kingdom</a>
-          <a href="portugal.html" class="mob-country-link"><span>🇵🇹</span> Portugal (Porto)</a>
-          <a href="pakistan.html" class="mob-country-link"><span>🇵🇰</span> Pakistan (Okara)</a>
-          <a href="korea.html" class="mob-country-link"><span>🇰🇷</span> South Korea (Seoul)</a>
-        </div>
         <a href="index.html#faqs" class="mob-link">FAQs</a>
-        <a href="contact.html" class="mob-link" style="color:var(--primary-purple); font-weight:700;">Contact Us</a>
+        
+        <div class="mob-offices-block">
+          <div class="mob-offices-title">Global Offices</div>
+          <div class="mob-sub-countries">
+            <a href="dubai.html" class="mob-country-link">
+              <span class="mob-flag">🇦🇪</span>
+              <span>Dubai, UAE (Global HQ)</span>
+            </a>
+            <a href="usa.html" class="mob-country-link">
+              <span class="mob-flag">🇺🇸</span>
+              <span>United States (USA)</span>
+            </a>
+            <a href="united-kingdom.html" class="mob-country-link">
+              <span class="mob-flag">🇬🇧</span>
+              <span>United Kingdom</span>
+            </a>
+            <a href="portugal.html" class="mob-country-link">
+              <span class="mob-flag">🇵🇹</span>
+              <span>Portugal (Porto)</span>
+            </a>
+            <a href="pakistan.html" class="mob-country-link">
+              <span class="mob-flag">🇵🇰</span>
+              <span>Pakistan (Okara)</span>
+            </a>
+            <a href="korea.html" class="mob-country-link">
+              <span class="mob-flag">🇰🇷</span>
+              <span>South Korea (Seoul)</span>
+            </a>
+          </div>
+        </div>
       </div>
-      <div style="margin-top:auto; padding-top:20px;">
-        <a href="mailto:admin@brightlinks.ae" style="color:#64748b; font-size:0.9rem;">admin@brightlinks.ae</a>
+      
+      <div class="mob-drawer-footer">
+        <a href="contact.html" class="mob-btn-primary">Contact Us</a>
+        <a href="https://wa.me/971522994897" target="_blank" rel="noopener" class="mob-btn-whatsapp">
+          <svg class="wa-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.472 14.382c-.301-.15-1.78-.878-2.056-.979-.275-.1-.475-.15-.675.15-.2.3-.775.979-.95 1.18-.175.2-.35.225-.65.075-.3-.15-1.267-.467-2.413-1.489-.892-.796-1.494-1.78-1.669-2.08-.175-.3-.019-.462.131-.611.135-.134.3-.35.45-.525.15-.175.2-.3.3-.5.1-.2.05-.375-.025-.525-.075-.15-.675-1.628-.925-2.228-.243-.585-.49-.506-.675-.515-.175-.008-.375-.01-.575-.01s-.525.075-.8.375c-.275.3-1.05 1.027-1.05 2.504s1.075 2.905 1.225 3.105c.15.2 2.115 3.23 5.124 4.53.716.31 1.275.495 1.71.634.72.23 1.375.197 1.894.12.578-.087 1.78-.727 2.03-1.429.25-.702.25-1.303.175-1.429-.075-.126-.275-.201-.575-.351zM12.004 21.75c-1.75 0-3.467-.46-4.975-1.33l-.356-.206-3.7 1.002.988-3.606-.232-.375a9.71 9.71 0 0 1-1.483-5.235c0-5.385 4.38-9.75 9.758-9.75 2.607 0 5.06 1.016 6.904 2.863a9.697 9.697 0 0 1 2.85 6.892c-.004 5.385-4.385 9.745-9.754 9.745zm8.337-18.08C18.12 1.455 15.176.25 12.004.25c-6.49 0-11.75 5.26-11.75 11.75 0 2.073.542 4.098 1.571 5.882L0 23.75l6.02-1.579a11.706 11.706 0 0 0 5.984 1.579c6.49 0 11.75-5.26 11.75-11.75 0-3.14-1.222-6.09-3.413-8.33z"/></svg>
+          <span>WhatsApp Dubai HQ</span>
+        </a>
+        <div class="mob-contact-subtext">Office 45, Al-Khabaisi, Deira, Dubai</div>
       </div>
     </div>
   </div>
